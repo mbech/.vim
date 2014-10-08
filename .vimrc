@@ -4,7 +4,7 @@ colorscheme molokai
 " Activates filetype detection
 filetype plugin indent on
 
-        " activates syntax highlighting among other things
+" activates syntax highlighting among other things
 syntax on
 
 " allows you to deal with multiple unsaved
@@ -42,6 +42,9 @@ set showmatch
 " Search behavior
 set incsearch
 set hlsearch
+
+" Set where all the swp files sit (so as not to clutter repository)
+set dir=~/.vim-swp
 
 " Pathogen plugin load
 call pathogen#infect() 
