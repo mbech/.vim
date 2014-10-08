@@ -7,6 +7,10 @@ filetype plugin indent on
 " activates syntax highlighting among other things
 syntax on
 
+" Make it obvious where 80 characters is
+set textwidth=80
+set colorcolumn=+1
+
 " allows you to deal with multiple unsaved
 " buffers simultaneously without resorting
 " to misusing tabs
