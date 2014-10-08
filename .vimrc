@@ -47,6 +47,14 @@ set showmatch
 set incsearch
 set hlsearch
 
+"folding settings
+set foldmethod=indent   "fold based on indent
+set foldnestmax=2       "deepest fold is 2, methods fold, statements won't 
+set nofoldenable        "dont fold by default
+set foldlevel=1          
+nnoremap <space> za
+vnoremap <space> zf
+
 " Set where all the swp files sit (so as not to clutter repository)
 set dir=~/.vim-swp
 
