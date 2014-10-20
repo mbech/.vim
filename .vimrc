@@ -64,3 +64,6 @@ call pathogen#infect()
 " NERDtree
 map <C-n> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif  "let's one quit vim if NERDtree is last window
+
+" Recognize md files as markdown for syntax highlighting
+au BufRead,BufNewFile *.md set filetype=markdown
