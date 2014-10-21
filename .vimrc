@@ -62,8 +62,11 @@ set dir=~/.vim-swp
 call pathogen#infect() 
 
 " NERDtree
-map <C-n> :NERDTreeToggle<CR>
+" map <C-n> :NERDTreeToggle<CR> <-- use NERDtree-tabs instead
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif  "let's one quit vim if NERDtree is last window
+
+" NERDtree-tabs toggle
+map <C-n> :NERDTreeTabsToggle<CR> 
 
 " Recognize md files as markdown for syntax highlighting
 au BufRead,BufNewFile *.md set filetype=markdown
