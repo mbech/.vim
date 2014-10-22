@@ -62,7 +62,6 @@ set dir=~/.vim-swp
 call pathogen#infect() 
 
 " NERDtree
-" map <C-n> :NERDTreeToggle<CR> <-- use NERDtree-tabs instead
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif  "let's one quit vim if NERDtree is last window
 
 " NERDtree-tabs toggle
