@@ -43,6 +43,9 @@ set wildmenu
 " Indicate matching parens when cursor is on one
 set showmatch
 
+" Make all operations dealing with buffers also use clipboard
+set clipboard=unnamed
+
 " Search behavior
 set incsearch
 set hlsearch
