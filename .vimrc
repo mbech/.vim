@@ -72,3 +72,6 @@ map <C-n> :NERDTreeTabsToggle<CR>
 
 " Recognize md files as markdown for syntax highlighting
 au BufRead,BufNewFile *.md set filetype=markdown
+
+" Git commits, cap line at 72 chars
+autocmd Filetype gitcommit setlocal spell textwidth=72
