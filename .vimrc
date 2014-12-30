@@ -75,8 +75,3 @@ au BufRead,BufNewFile *.md set filetype=markdown
 
 " Git commits, cap line at 72 chars
 autocmd Filetype gitcommit setlocal spell textwidth=72
-
-" Lightline settings
-let g:lightline = {
-      \ 'colorscheme': 'default',
-      \ }
