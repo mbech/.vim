@@ -23,7 +23,6 @@
 :autocmd! FileAppendPost
 :autocmd! FileAppendCmd
 
-:autocmd! QuitPre
 :autocmd! VimLeavePre
 :autocmd! VimLeave
 
