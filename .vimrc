@@ -28,7 +28,8 @@ set softtabstop=2
 " Tabs are turned into equivalent number of spaces
 set expandtab
 
-" Show line numbers
+" Show line number on current line, relative on others
+set relativenumber
 set number
 
 " Show line of commands
@@ -69,6 +70,9 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 
 " NERDtree-tabs toggle
 map <C-n> :NERDTreeTabsToggle<CR> 
+
+" NERDtree, show hidden files by default
+let NERDTreeShowHidden=1
 
 " Recognize md files as markdown for syntax highlighting
 au BufRead,BufNewFile *.md set filetype=markdown
