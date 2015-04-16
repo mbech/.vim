@@ -8,8 +8,10 @@ filetype plugin indent on
 syntax on
 
 " Make it obvious where 80 characters is
-set textwidth=80
-set colorcolumn=+1
+" visual wrapping only
+set textwidth=0 wrapmargin=0
+set wrap
+set colorcolumn=80
 
 " allows you to deal with multiple unsaved
 " buffers simultaneously without resorting
