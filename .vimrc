@@ -24,8 +24,8 @@ set backspace=indent,eol,start
 
 " How to visually show tabs
 set expandtab
-set shiftwidth=2
-set softtabstop=2
+set shiftwidth=4
+set softtabstop=4
 
 " Tabs are turned into equivalent number of spaces
 set expandtab
