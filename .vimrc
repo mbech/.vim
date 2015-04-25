@@ -22,10 +22,13 @@ set hidden
 " see for yourself
 set backspace=indent,eol,start
 
-" How to visually show tabs
+" Set spacing
 set expandtab
-set shiftwidth=4
-set softtabstop=4
+set shiftwidth=2
+set softtabstop=2
+
+autocmd Filetype javascript setlocal ts=4 sw=4 expandtab
+autocmd Filetype python setlocal ts=4 sw=4 expandtab
 
 " Tabs are turned into equivalent number of spaces
 set expandtab
