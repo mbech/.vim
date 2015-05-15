@@ -85,3 +85,24 @@ autocmd Filetype gitcommit setlocal spell textwidth=72
 
 " Airline settings
 let g:airline_powerline_fonts = 1 
+
+" Better Rainbow Parens settings
+let g:rbpt_colorpairs = [
+    \ ['red',       'SeaGreen3'],
+    \ ['darkmagenta', 'DarkOrchid3'],
+    \ ['blue',      'firebrick3'],
+    \ ['darkgreen',   'RoyalBlue3'],
+    \ ['darkcyan',    'SeaGreen3'],
+    \ ['darkred',     'DarkOrchid3'],
+    \ ['red',       'SeaGreen3'],
+    \ ['darkmagenta', 'DarkOrchid3'],
+    \ ['blue',      'firebrick3'],
+    \ ['darkgreen',   'RoyalBlue3'],
+    \ ['darkcyan',    'SeaGreen3'],
+    \ ['darkred',     'DarkOrchid3'],
+    \ ['white',        'firebrick3'],
+    \ ]
+
+let g:rbpt_max = 13
+
+autocmd Filetype clojure :RainbowParenthesesToggle
