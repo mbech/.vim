@@ -106,3 +106,4 @@ let g:rbpt_colorpairs = [
 let g:rbpt_max = 13
 
 autocmd Filetype clojure :RainbowParenthesesToggle
+autocmd Filetype clojurescript :RainbowParenthesesToggle
