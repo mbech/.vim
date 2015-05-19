@@ -67,7 +67,8 @@ set dir=~/.vim-swp
 call pathogen#infect() 
 
 " NERDtree
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif  "let's one quit vim if NERDtree is last window
+"lets one quit vim if NERDtree is last window
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 " NERDtree-tabs toggle
 map <C-n> :NERDTreeTabsToggle<CR> 
@@ -83,3 +84,6 @@ autocmd Filetype gitcommit setlocal spell textwidth=72
 
 " Airline settings
 let g:airline_powerline_fonts = 1 
+
+" rainbow parens
+let g:rainbow_active = 1
