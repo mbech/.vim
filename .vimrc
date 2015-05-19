@@ -1,10 +1,8 @@
 " Color
 colorscheme molokai 
 
-" Activates filetype detection
+" built-in indent/highlighting
 filetype plugin indent on
-
-" activates syntax highlighting among other things
 syntax on
 
 " Make it obvious where 80 characters is
