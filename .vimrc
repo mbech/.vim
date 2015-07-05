@@ -27,6 +27,7 @@ set softtabstop=2
 
 autocmd Filetype javascript setlocal ts=4 sw=4 expandtab
 autocmd Filetype python setlocal ts=4 sw=4 expandtab
+au BufNewFile,BufRead *.clj* set filetype=clojure
 
 " Tabs are turned into equivalent number of spaces
 set expandtab
