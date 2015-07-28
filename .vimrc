@@ -78,7 +78,10 @@ map <C-n> :NERDTreeTabsToggle<CR>
 let NERDTreeShowHidden=1
 
 " Keep NERDTree open on first file open
-let NERDTreeQuitOnOpen = 0
+let NERDTreeQuitOnOpen=0
+
+" Start NERDTree on Vim start
+autocmd VimEnter * NERDTree
 
 " Recognize md files as markdown for syntax highlighting
 au BufRead,BufNewFile *.md set filetype=markdown
