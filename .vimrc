@@ -85,6 +85,7 @@ autocmd VimEnter * NERDTree
 
 " Recognize md files as markdown for syntax highlighting
 au BufRead,BufNewFile *.md set filetype=markdown
+au BufRead,BufNewFile *.vfp set filetype=visualforce
 
 " Git commits, cap line at 72 chars
 autocmd Filetype gitcommit setlocal spell textwidth=72
